@@ -1,5 +1,8 @@
 {
   "author": {
+    "name": "Schmittberger",
+  },
+  "author": {
     "name": "Philip Skinner",
     "email": "me@philip-skinner.co.uk",
     "url": "https://github.com/PhilipSkinner"
@@ -9,7 +12,7 @@
     "makerunnable": "./bin/makerunnable.js"
   },
   "bugs": {
-    "url": "https://github.com/PhilipSkinner/windows/issues"
+    "url": "https://github.com/schmittberger/windows/issues"
   },
   "dependencies": {
     "jasmine": "^3.1.0"
@@ -19,13 +22,13 @@
   "devDependencies": {
     "jasmine" : "3.1.0"
   },
-  "homepage": "https://github.com/PhilipSkinner/windows",
+  "homepage": "https://github.com/schmittberger/windows",
   "main": "index.js",
   "name": "windows",
   "optionalDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git@github.com:PhilipSkinner/windows.git"
+    "url": "git@github.com:schmittberger/windows.git"
   },
   "scripts" :{
     "test" : "jasmine"
@@ -43,5 +46,5 @@
     "drive alias",
     "windows sdk"
   ],
-  "version": "0.0.8"
+  "version": "0.0.9"
 }
