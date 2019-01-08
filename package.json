@@ -1,11 +1,8 @@
 {
   "author": {
     "name": "Schmittberger",
-  },
-  "author": {
-    "name": "Philip Skinner",
-    "email": "me@philip-skinner.co.uk",
-    "url": "https://github.com/PhilipSkinner"
+    "email": "47110815@grr.la",
+    "url": "https://github.com/Schmittberger"
   },
   "bin": {
     "cwddrive": "./bin/cwddrive.js",
@@ -15,23 +12,22 @@
     "url": "https://github.com/schmittberger/windows/issues"
   },
   "dependencies": {
-    "jasmine": "^3.1.0"
+    "jasmine": "^3.1.0",
+    "types": "^0.1.1"
   },
   "deprecated": false,
   "description": "A collection of utilities for Windows for Node.js",
-  "devDependencies": {
-    "jasmine" : "3.1.0"
-  },
+  "devDependencies": {},
   "homepage": "https://github.com/schmittberger/windows",
   "main": "index.js",
-  "name": "windows",
+  "name": "windows-tools",
   "optionalDependencies": {},
   "repository": {
     "type": "git",
     "url": "git@github.com:schmittberger/windows.git"
   },
-  "scripts" :{
-    "test" : "jasmine"
+  "scripts": {
+    "test": "jasmine"
   },
   "tags": [
     "Windows",
