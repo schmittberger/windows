@@ -6,7 +6,6 @@
   },
   "bin": {
     "cwddrive": "./bin/cwddrive.js",
-    "makerunnable": "./bin/makerunnable.js"
   },
   "bugs": {
     "url": "https://github.com/schmittberger/windows/issues"
@@ -42,5 +41,5 @@
     "drive alias",
     "windows sdk"
   ],
-  "version": "0.0.12"
+  "version": "0.0.13"
 }
