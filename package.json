@@ -5,7 +5,7 @@
     "url": "https://github.com/Schmittberger"
   },
   "bin": {
-    "cwddrive": "./bin/cwddrive.js",
+    "cwddrive": "./bin/cwddrive.js"
   },
   "bugs": {
     "url": "https://github.com/schmittberger/windows/issues"
