@@ -11,8 +11,6 @@ Some wrappers for the below APIs to be used on the command line.
 cwddrive                          alias a random available drive letter to current working directory
 cwddrive L                        alias L to CWD if not taken, or toggles it off if it currently is L
 cwddrive L C:/some/folder         alias L to C:/some/folder if available
-
-makerunnable f1.js [f2.js] ...    creates a .cmd file in npm.globalBin (is in PATH) that will exec the .js
 ```
 
 ## APIs
@@ -22,14 +20,6 @@ makerunnable f1.js [f2.js] ...    creates a .cmd file in npm.globalBin (is in PA
 driveAlias('x', folder)                  // alias a folder to `X:\`
 driveAlias('x')                          // remove aliased `X:\` folderdrive
 driveAlias()                             // list all aliased drives
-
-
-runnable(['myCLI.js',...],function(r){   // for each js file given a %name%.cmd will be
-  'NPMGLOBALBIN/myCLI.cmd created'       // create in the npm global bin directory that
-    // or                                // will launch the given js file. npm's globalBin
-  'Could not find myCLI.js'              // is added to PATH by default on installation
-});
-
 
 associations('.js'. 'jscript')           // add or change extension to type map
 associations('.js')                      // retrieve type
