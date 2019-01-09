@@ -1,6 +1,6 @@
 # Node Utilities for Windows
 
-Right now it's just a few wrappers around some builtin console commands but FFI bindings are soon to come.
+Right now it's just a few wrappers around some builtin console commands
 
 ## Command line tools
 
