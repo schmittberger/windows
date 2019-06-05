@@ -52,7 +52,7 @@ x.add('newName', v.someValue)            // clone a value
 
 z = v.aValue                             // manipulate wrapped values even after deleting them
 z.remove()
-v.add(z.name, z)  //oops undo
+v.add(z.name, z)  						 //oops undo
 
 v.remove()                               // delete a key and all its contents recursively
 v.remove('name')                         // just delete a child (key or value)
@@ -88,7 +88,7 @@ execSync('cmd' ...)                     // executes the command synchronously an
                                         // flattening all params down to spaced delineation
 
 Command(command, name, formatter)       // create a wrapped execSync calling function that executes
-                                        // the command when called. Name and formatter are optiona,
+                                        // the command when called. Name and formatter are optional,
                                         // with the default formatter splits the result into an array of lines
 
 
