@@ -41,13 +41,13 @@ findWindowsSDK() //-->                   // simply utility for detecting install
 
 registry(key, options)                   // returns an object containing the keys and values
 
-v = registry('HKLM/Software/Microsoft'   // wrapped in objects allowing further fluent commands
+v = registry('HKLM\Software\Microsoft')  // wrapped in objects allowing further fluent commands
 v.someValue.remove()                     // delete value
 v.add('newValue', 'myValue')             // add new value
 v.add('newKey')                          // a key is like a folder
 v.subKey                                 // getter which goes down one level deeper
 
-x = registry('HKCU/Some/Random/Place')
+x = registry('HKCU\Some\Random\Place')
 x.add('newName', v.someValue)            // clone a value
 
 z = v.aValue                             // manipulate wrapped values even after deleting them
@@ -57,6 +57,11 @@ v.add(z.name, z)  						 //oops undo
 v.remove()                               // delete a key and all its contents recursively
 v.remove('name')                         // just delete a child (key or value)
 
+r = registry('\\hostname\HKLM\Software') // accessing a remote registry is also possible
+										 // for authentication exec the command:
+										 // "net use \\hostname <password> /user:<username>"
+										 // before calling registry. E.g. with execSync()
+										 
 
 options = { search    : 'query',         // all options are optional
             recursive : false,
@@ -66,6 +71,9 @@ options = { search    : 'query',         // all options are optional
             type      : 'REG_SZ'     || 'REG_MULTI_SZ'  || 'REG_DWORD' ||
                         'REG_BINARY' || 'REG_EXPAND_SZ' || 'REG_QWORD' ||
                         'REG_NONE' }
+						
+v = registry('HKLM\Software\Microsoft',  // example with option recursive set to true
+			 {recursive: true})
 
 
 // The raw commands are provided as well but are annoying to use directly
